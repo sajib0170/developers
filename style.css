@@ -1,0 +1,161 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+.hero-section{
+    background-image: url(image/developer.png);
+    min-height: 100vh;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.text-container{
+    max-width: 900px;
+     margin: 0 auto; 
+     padding-top:20px ;
+     color: beige;
+  
+    
+}
+
+.la-text{
+    font-size: 72px;
+    font-weight: 400;
+}
+.text-container h2{
+    font-size: 32px;
+}
+
+.black{
+    padding: 50px;
+   background-color: black;
+}
+ .black h2{
+    color: white;
+    font-size: 72px;
+    text-align: center;
+    align-items: center;
+
+}
+
+
+.work{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    max-width: 1100px;
+    margin: 50px auto;
+   
+    
+}
+.card{
+    max-width: 320px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px gray;
+    transition: .3s ease-in-out;
+
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition: .3s ease-in-out;
+}
+.grid-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-section{
+    display: flex;
+   
+}
+.contract{
+    background-color: blue;
+}
+.about{
+    background-color: brown;
+}
+
+.contract, .about{
+   padding: 80px;
+  
+}
+.contract h1, .about h1{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.contract p, .about p{
+  
+    font-weight: 400;
+    font-size: 26px;
+}
+
+
+.footer{
+   background-color: black;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    font-size: 24px;
+    cursor: pointer;
+}
+@media (max-width:765px) {
+    .text-container{
+        line-height: 1.1;
+        padding-left: 30px;
+    }
+
+    .hero-section{
+        min-height: 50vh;
+
+    }
+
+    
+.text-container{
+  
+      padding: 10px;
+        text-align: center;
+    
+  
+    
+}
+.text-container h1{
+    font-size: 32px;
+}
+
+    
+.la-text{
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.text-container h2{
+    font-size: 24px;
+    font-weight: 300;
+}
+.black h2{
+    font-size: 24px;
+}
+
+.bottom-section{
+    flex-direction: column;
+}
+
+
+}
